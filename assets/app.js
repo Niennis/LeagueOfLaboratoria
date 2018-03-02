@@ -183,8 +183,9 @@ function uploadFile() {
     // Acá ponemos el archivo que obtuvimos desde el input
     thisRef.put(file).then(function(snapshot) {
         console.log('Uploaded a blob or file!');
-    });
-
-    
-
+        return thisRef.getDownloadURL()
+    }).then(function(url) {
+        console.log(url);
+        $('#champions').append('<img src="' + url + '"/>');
+    }); 
 }
