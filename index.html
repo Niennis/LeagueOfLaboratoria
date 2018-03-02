@@ -32,12 +32,12 @@
     <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyAICugXdOkIdM_97Kjhd52gvBLI5FBeLNg",
-            authDomain: "leagueoflaboratoria.firebaseapp.com",
-            databaseURL: "https://leagueoflaboratoria.firebaseio.com",
-            projectId: "leagueoflaboratoria",
-            storageBucket: "",
-            messagingSenderId: "391057320118"
+            apiKey: "AIzaSyAbl4sKom--OUYmK-laHDNiNaNpoDKFsPA",
+            authDomain: "my-project-1517879849329.firebaseapp.com",
+            databaseURL: "https://my-project-1517879849329.firebaseio.com",
+            projectId: "my-project-1517879849329",
+            storageBucket: "my-project-1517879849329.appspot.com",
+            messagingSenderId: "811644889482"
         };
         firebase.initializeApp(config);
     </script>
@@ -47,6 +47,7 @@
     <h1>League of Laboratoria</h1>
     <input type="button" onclick="facebookLogin()">Login con Facebook</input>
     <div id="champions"></div>
+    <input id="upload-file-selector" type="file" accept="image/x-png, image/gif, image/jpeg" onChange='uploadFile()'>
 
     <script src="assets/app.js"></script>
 </body>
